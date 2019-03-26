@@ -9,6 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "SpinalCOM",
+  "types": "./declarations/index.d.ts",
   "dependencies": {
     "spinal-core-connectorjs_type": "git+https://github.com/spinalcom/spinal-core-connectorjs_type.git"
   },
