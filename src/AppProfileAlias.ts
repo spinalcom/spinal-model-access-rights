@@ -1,5 +1,6 @@
 import { Model, spinalCore } from 'spinal-core-connectorjs_type';
 import { AppProfile } from "./AppProfile";
+import Ptr = spinal.Ptr;
 
 /**
  * Model that represent an alias of an appProfile.
@@ -10,16 +11,16 @@ import { AppProfile } from "./AppProfile";
  */
 export class AppProfileAlias extends Model{
   public  name: spinal.Str;
-  public appProfiles: spinal.Ptr<AppProfile>;
+  public appProfile: spinal.Ptr<AppProfile>;
 
   /**
    * @param name {string}
    * @param appProfiles {AppProfile[]}
    */
-  constructor(name :string, appProfiles: AppProfile[] = []){
+  constructor(name :string, appProfiles: AppProfile){
     super({
       name: name,
-      appProfiles: appProfiles
+      appProfile: new Ptr(appProfiles)
     });
   }
 
