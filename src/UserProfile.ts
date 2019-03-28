@@ -7,13 +7,14 @@ import { Role } from "./Role";
  */
 export class UserProfile extends Model {
   public roles: spinal.Lst<Role>;
-
+  public name: string;
   /**
-   *
+   * @param {string} name of the user
    * @param {Role[]} roles list of role that represent the user. default []
    */
-  constructor(roles: Role[] = []) {
+  constructor(name: string, roles: Role[] = []) {
     super({
+      name: name,
       roles: roles
     });
   }
