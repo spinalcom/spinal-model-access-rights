@@ -1,11 +1,8 @@
 {
   "name": "spinal-model-access-rights",
-  "version": "1.0.0",
+  "version": "0.5.0",
   "description": "Models for spinal access right manager",
   "main": "dist/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
   "author": "",
   "license": "SpinalCOM",
