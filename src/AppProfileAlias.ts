@@ -1,6 +1,5 @@
-import { Model, spinalCore } from 'spinal-core-connectorjs_type';
+import { Model, spinalCore,Ptr } from 'spinal-core-connectorjs_type';
 import { AppProfile } from "./AppProfile";
-import Ptr = spinal.Ptr;
 
 /**
  * Model that represent an alias of an appProfile.

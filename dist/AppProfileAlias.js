@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const spinal_core_connectorjs_type_1 = require("spinal-core-connectorjs_type");
-var Ptr = spinal.Ptr;
 /**
  * Model that represent an alias of an appProfile.
  * The name of the appProfile represented by the alias can be modified
@@ -17,7 +16,7 @@ class AppProfileAlias extends spinal_core_connectorjs_type_1.Model {
     constructor(name, appProfiles) {
         super({
             name: name,
-            appProfile: new Ptr(appProfiles)
+            appProfile: new spinal_core_connectorjs_type_1.Ptr(appProfiles)
         });
     }
 }

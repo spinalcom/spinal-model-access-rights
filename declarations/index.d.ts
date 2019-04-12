@@ -3,4 +3,6 @@ import { AppProfileLst } from "./AppProfileLst";
 import { Role } from "./Role";
 import { RoleLst } from "./RoleLst";
 import { UserProfile } from "./UserProfile";
-export { AppProfile, AppProfileLst, Role, RoleLst, UserProfile };
+import { AppProfileAlias } from "./AppProfileAlias";
+import { AppProfileAliasLst } from "./AppProfileAliasLst";
+export { AppProfile, AppProfileLst, AppProfileAlias, AppProfileAliasLst, Role, RoleLst, UserProfile };
